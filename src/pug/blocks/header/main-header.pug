@@ -1,0 +1,25 @@
+header.main-header 
+    .container--big
+        .main-header__wrapper
+            include sandwich
+            ul.main-header__menu.menu#js-main-menu
+                li.menu__item
+                    a.menu__link(href="#") Home
+                li.menu__item
+                    a.menu__link(href="#") About
+                li.menu__item
+                    a.menu__link(href="#") Menu
+                li.menu__item
+                    a.menu__link(href="#") Reservation
+                li.menu__item
+                    a.menu__link(href="#") Pages
+                li.menu__item
+                    a.menu__link(href="#") Shop
+                li.menu__item
+                    a.menu__link(href="#") Contact
+            .main-header__icons
+                include ../icons/search
+                include ../icons/bag
+            .main-header__logo
+                a.main-header__link(href="#") 
+                    img(src="assets/i/logo.svg", alt="") 

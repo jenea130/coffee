@@ -1,0 +1,83 @@
+html {
+	font-size: 62.5%;
+	min-width: 320px;
+
+	@media screen and (max-width: 1550px) {
+		font-size: 60%;
+	}
+
+	@media screen and (max-width: 1400px) {
+		font-size: 58%;
+	}
+
+	@media screen and (max-width: 1300px) {
+		font-size: 54%;
+	}
+
+	@media screen and (max-width: 1200px) {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: var(--font-1);
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.8;
+	background: #14110e;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul,
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 15px;
+}
+.container--big {
+	margin: 0 auto;
+	max-width: 1350px;
+	padding: 0 15px;
+}
+
+input[type="submit"]:disabled {
+	cursor: not-allowed !important;
+	opacity: 0.6 !important;
+}
