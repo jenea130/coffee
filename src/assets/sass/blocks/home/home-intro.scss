@@ -1,0 +1,108 @@
+.home-intro {
+	.home-intro__img {
+		position: relative;
+		height: 86.4rem;
+		@media screen and (max-width: 768px) {
+			height: 66rem;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			@media screen and (max-width: 576px) {
+				object-position: 60%;
+			}
+		}
+	}
+	&__wrapper {
+		padding: 0 7.5rem;
+		@media screen and (max-width: 576px) {
+			padding: 0;
+		}
+	}
+	&__content {
+		position: absolute;
+		margin-top: 14.7rem;
+		max-width: 53rem;
+		@media screen and (max-width: 768px) {
+			margin-top: 10rem;
+			margin-bottom: 4rem;
+		}
+		@media screen and (max-width: 576px) {
+			max-width: 55rem;
+			padding-right: 2rem;
+		}
+	}
+	&__title {
+		margin-bottom: 3.2rem;
+		font-family: var(--font-3);
+		font-size: 7.2rem;
+		color: #fff;
+		font-weight: 400;
+		line-height: 1.3;
+		@media screen and (max-width: 576px) {
+			font-size: 5.2rem;
+		}
+	}
+	&__text {
+		// margin-bottom: 6.4rem;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 1.8;
+		color: rgba(255, 255, 255, 0.8);
+		text-transform: capitalize;
+	}
+	&__bottom {
+		position: relative;
+		top: 54rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		@media screen and (max-width: 768px) {
+			top: 46rem;
+		}
+	}
+
+	&__video {
+		display: inline-block;
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover,
+		&:hover span {
+			color: var(--accent);
+		}
+		span {
+			display: inline-block;
+			font-family: var(--font-2);
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+	}
+	&__play {
+		margin: 0 auto 2rem;
+		width: 70px;
+		height: 70px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		.home-intro__video:hover & {
+			border: 1px solid var(--accent);
+		}
+	}
+	&__triangle {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-8%, -40%);
+		border-style: solid;
+		border-width: 7px 0 7px 14px;
+		border-color: transparent transparent transparent #ffffff;
+		.home-intro__video:hover & {
+			border-color: transparent transparent transparent var(--accent);
+		}
+	}
+}

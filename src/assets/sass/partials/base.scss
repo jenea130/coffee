@@ -77,7 +77,20 @@ p {
 	padding: 0 15px;
 }
 
-input[type="submit"]:disabled {
-	cursor: not-allowed !important;
-	opacity: 0.6 !important;
+.btn {
+	display: inline-block;
+	padding: 2.4rem 4rem;
+	font-family: var(--font-2);
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: normal;
+	color: #fff;
+	background: var(--accent);
+	border: 2px solid var(--accent);
+	text-transform: uppercase;
+	transition: all 0.4s;
+	&:hover {
+		background: #0D0C0A;
+	}
+
 }
