@@ -108,3 +108,10 @@ p {
 	color: rgba(255, 255, 255, 0.8);
 	text-transform: capitalize;
 }
+.label {
+	font-family: var(--font-1);
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: normal;
+	color: var(--accent);
+}

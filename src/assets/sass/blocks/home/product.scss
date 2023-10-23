@@ -1,0 +1,29 @@
+.product {
+	padding: 7rem 0;
+	text-align: center;
+	&__label {
+		margin-bottom: 1.2rem;
+	}
+	&__title {
+		margin-bottom: 5.6rem;
+	}
+	&__wrapper {
+		display: flex;
+		margin: 0 -1.8rem 5.6rem;
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+            justify-content: center;
+		}
+        @media screen and (max-width: 576px) {
+            display: block;
+        }
+	}
+	&__card {
+		flex: 0 0 calc(100% / 3 - 3.6rem);
+		margin: 0 1.8rem;
+		@media screen and (max-width: 768px) {
+			flex: 0 0 calc(100% / 2 - 3.6rem);
+            margin-bottom: 2rem;
+		}
+	}
+}

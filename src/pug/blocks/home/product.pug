@@ -1,0 +1,28 @@
+section.product
+    .container
+        .product__label.label Popular Product
+        h2.product__title.title Coffee popular Product
+        .product__wrapper
+            .product__card.card
+                .card__img 
+                    img(src="assets/i/product/product-1.jpg", alt="")
+                .card__content
+                    h3.card__subtitle brazil coffee gred
+                    button.card__btn 
+                        include ../icons/bag-btn
+                        | Add to cart
+            .product__card.card
+                .card__img 
+                    img(src="assets/i/product/product-1.jpg", alt="")
+                .card__content
+                    .card__rating coffee
+                    h3.card__subtitle brazil coffee gred
+                    span.card__price Price - #[strong $320.00/] $358
+            .product__card.card
+                .card__img 
+                    img(src="assets/i/product/product-1.jpg", alt="")
+                .card__content
+                    .card__rating coffee
+                    h3.card__subtitle brazil coffee gred
+                    span.card__price Price - #[strong $320.00/] $358
+        a.product__btn.btn(href="#") View all product
