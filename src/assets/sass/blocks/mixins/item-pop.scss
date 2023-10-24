@@ -1,0 +1,36 @@
+.item-pop {
+	display: flex;
+	align-items: center;
+	padding: 2.4rem;
+	border: 1px solid #32323d;
+	&__img {
+		margin-right: 2rem;
+		position: relative;
+		flex: 0 0 7.2rem img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__subtitle {
+		text-align: left;
+		margin-right: auto;
+		font-family: var(--font-3);
+		font-size: 2.4rem;
+		font-weight: 400;
+		color: #fff;
+		line-height: normal;
+	}
+	&__price {
+		display: block;
+		margin-left: 2rem;
+		font-family: var(--font-1);
+		font-size: 1.8rem;
+		font-weight: 600;
+		line-height: normal;
+		color: #c99e71;
+	}
+}

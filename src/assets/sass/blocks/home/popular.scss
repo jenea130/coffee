@@ -1,0 +1,33 @@
+.popular {
+	padding: 7rem 0;
+	text-align: center;
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 4rem;
+		margin: 0 -2rem;
+		@media screen and (max-width: 992px) {
+			display: block;
+		}
+	}
+	&__label {
+		margin-bottom: 1.2rem;
+	}
+	&__title {
+		margin-bottom: 5.6rem;
+	}
+	&__item {
+		flex: 0 0 calc(100% / 2 - 4rem);
+		margin: 0 2rem;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 3rem;
+        }
+        @media screen and (max-width: 576px) {
+            margin-bottom: 2rem;
+        }
+
+	}
+    &__price {
+        display: block;
+    }
+}

@@ -1,3 +1,10 @@
 mixin icon(icon, location)
   svg(class="" + icon)
     use(xlink:href="#" + location )
+
+mixin item-pop(pic, title, price)
+  .item-pop
+    .item-pop__img 
+      img(src= pic alt="")
+    .item-pop__subtitle= title
+    span.item-pop__price= price

@@ -3,6 +3,8 @@
 @import "partials/mixins";
 @import "partials/base";
 
+@import "blocks/mixins/item-pop";
+
 @import "blocks/header/main-header";
 @import "blocks/header/menu";
 @import "blocks/header/sandwich";
@@ -13,3 +15,4 @@
 @import "blocks/home/product";
 @import "blocks/home/card";
 @import "blocks/home/discover";
+@import "blocks/home/popular";
