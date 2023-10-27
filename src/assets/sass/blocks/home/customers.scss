@@ -1,0 +1,117 @@
+.customers {
+	padding: 7rem 0 7rem;
+	&__label {
+		margin-bottom: 1.2rem;
+		text-align: center;
+	}
+	&__title {
+		margin-bottom: 5.6rem;
+		text-align: center;
+	}
+	&__item {
+		padding: 4rem;
+		background: var(--bg-dark);
+	}
+	.slick-list {
+		margin: 0 -20px;
+	}
+
+	.slick-slide {
+		margin: 0 20px;
+	}
+
+	&__block {
+		display: flex;
+		column-gap: 2.4rem;
+		@media screen and (max-width: 576px) {
+			display: block;
+		}
+	}
+	&__img {
+		position: relative;
+		// height: 14.9rem;
+		width: 100%;
+		padding-bottom: 31%;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-top: 2.8rem;
+	}
+	&__name {
+		margin-bottom: 0.4rem;
+		font-size: 1.8rem;
+		font-weight: 500;
+		line-height: 1.2;
+		color: #fff;
+	}
+	&__whois {
+		font-size: 1.4rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.8;
+		text-transform: capitalize;
+		color: rgba(255, 255, 255, 0.5);
+	}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__people {
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: 1.35;
+		color: var(--accent);
+	}
+	&__arrows {
+		display: flex;
+	}
+	&__arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 5.6rem;
+		height: 5.6rem;
+		border-radius: 50%;
+		stroke: white;
+		cursor: pointer;
+		&:hover,
+		&:hover svg {
+			background: var(--accent);
+			stroke: var(--bg-dark);
+		}
+	}
+	&__arrow--next {
+		transform: rotate(180deg);
+	}
+	.slick-dots {
+		position: relative;
+		bottom: -66px;
+		display: inline-flex;
+	}
+
+	.slick-dots button {
+		display: none;
+	}
+
+	.slick-dots li {
+		width: 5rem;
+		height: 4px;
+		border-radius: 40px;
+		background: var(--bg-dark);
+		cursor: pointer;
+	}
+
+	.slick-dots li.slick-active {
+		background: var(--accent);
+	}
+}

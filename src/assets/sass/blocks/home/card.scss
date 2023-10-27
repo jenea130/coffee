@@ -6,16 +6,6 @@
 	@media screen and (max-width: 992px) {
 		padding: 3vw 3vw 0 3vw;
 	}
-    &:hover {
-        .card__rating {
-            display: none;
-        }
-        .card__price {
-            display: none;
-        }
-        .card__btn {
-        }
-    }
 
 	&__img {
 		position: relative;
@@ -39,13 +29,21 @@
 			padding: 3vw 0;
 		}
 	}
+	&__wrap {
+		display: flex;
+		align-items: flex-start;
+	}
 	&__rating {
+		margin-right: 1.3rem;
         margin-bottom: 2rem;
 		font-size: 1.6rem;
 		font-weight: 500;
 		line-height: normal;
 		color: #c99e71;
 		text-transform: uppercase;
+	}
+	&__stars {
+		display: inline-block;
 	}
 	&__subtitle {
 		margin-bottom: 3.8rem;

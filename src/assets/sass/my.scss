@@ -2,6 +2,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/base";
+@import "../libs/slick.css";
 
 @import "blocks/mixins/item-pop";
 
@@ -16,3 +17,4 @@
 @import "blocks/home/card";
 @import "blocks/home/discover";
 @import "blocks/home/popular";
+@import "blocks/home/customers";
