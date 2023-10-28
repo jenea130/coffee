@@ -6,6 +6,8 @@
 
 @import "blocks/mixins/item-pop";
 
+@import "blocks/globals/form";
+
 @import "blocks/header/main-header";
 @import "blocks/header/menu";
 @import "blocks/header/sandwich";
@@ -18,3 +20,4 @@
 @import "blocks/home/discover";
 @import "blocks/home/popular";
 @import "blocks/home/customers";
+@import "blocks/home/booking";
